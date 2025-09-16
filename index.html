@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="display" id="display">0</div>
+        <div class="buttons">
+            <button class="btn-clear" onclick="clearDisplay()">C</button>
+            <button class="btn-clear" onclick="clearEntry()">CE</button>
+            <button class="btn-function" onclick="appendToDisplay('Math.sqrt(')">√</button>
+            <button class="btn-function" onclick="appendToDisplay('**')">x²</button>
+            <button class="btn-function" onclick="appendToDisplay('**3')">x³</button>
+
+            <button class="btn-function" onclick="appendToDisplay('Math.sin(')">sin</button>
+            <button class="btn-function" onclick="appendToDisplay('Math.cos(')">cos</button>
+            <button class="btn-function" onclick="appendToDisplay('Math.tan(')">tan</button>
+            <button class="btn-function" onclick="appendToDisplay('Math.log10(')">log</button>
+            <button class="btn-function" onclick="appendToDisplay('Math.log(')">ln</button>
+
+            <button class="btn-function" onclick="appendToDisplay('Math.PI')">π</button>
+            <button class="btn-function" onclick="appendToDisplay('Math.E')">e</button>
+            <button class="btn-operator" onclick="appendToDisplay('/')">/</button>
+            <button class="btn-operator" onclick="appendToDisplay('*')">×</button>
+            <button class="btn-operator" onclick="deleteLast()">⌫</button>
+
+            <button class="btn-number" onclick="appendToDisplay('7')">7</button>
+            <button class="btn-number" onclick="appendToDisplay('8')">8</button>
+            <button class="btn-number" onclick="appendToDisplay('9')">9</button>
+            <button class="btn-operator" onclick="appendToDisplay('-')">-</button>
+            <button class="btn-function" onclick="appendToDisplay('(')">(</button>
+
+            <button class="btn-number" onclick="appendToDisplay('4')">4</button>
+            <button class="btn-number" onclick="appendToDisplay('5')">5</button>
+            <button class="btn-number" onclick="appendToDisplay('6')">6</button>
+            <button class="btn-operator" onclick="appendToDisplay('+')">+</button>
+            <button class="btn-function" onclick="appendToDisplay(')')">)</button>
+
+            <button class="btn-number" onclick="appendToDisplay('1')">1</button>
+            <button class="btn-number" onclick="appendToDisplay('2')">2</button>
+            <button class="btn-number" onclick="appendToDisplay('3')">3</button>
+            <button class="btn-function" onclick="appendToDisplay('Math.pow(')">x^y</button>
+            <button class="btn-function" onclick="appendToDisplay('1/')">1/x</button>
+
+            <button class="btn-number btn-zero" onclick="appendToDisplay('0')">0</button>
+            <button class="btn-number" onclick="appendToDisplay('.')">.</button>
+            <button class="btn-equals" onclick="calculate()">=</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
